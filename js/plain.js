@@ -126,9 +126,3 @@ const goPromise = new Promise(resolve => resolve())
     .then(() => alert('Go'));
 
 goPromise.then(() => console.log('Going'));
-
-///////////////
-
-console.time('actionDuration');
-console.log('action');
-console.timeEnd('actionDuration');

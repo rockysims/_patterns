@@ -1,0 +1,23 @@
+span {
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
+
+div {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
+
+#someId {
+    color: red;
+}
+
+.someClass {
+    color: green;
+}
+
+[data-someAttr=someString] {
+    color: blue;
+}

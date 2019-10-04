@@ -45,8 +45,8 @@ window.addEventListener('load', () => {
     let count = 0;
     setInterval(() => {
         count++;
-        elem.style.top = origRect.top - count;
-        elem.style.left = origRect.left - count;
+        elem.style.top = origRect.top - count + 'px';
+        elem.style.left = origRect.left - count + 'px';
     }, 100);
 
     ///////////////

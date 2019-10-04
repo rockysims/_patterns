@@ -32,6 +32,7 @@ const s4 = (a[1] === 2)
 ///////////////
 
 const list = ['A', 'B', 'C'];
+
 for (let i = 0; i < list.length; i++) {
     console.log('item: ' + list[i]);
 }
@@ -56,6 +57,11 @@ const lowerCasedList = list.map(item => {
 
 const listWithoutB = list.filter(item => {
     return item !== 'B';
+});
+
+const numList = [1, 3, 5, 2, 4];
+const sortedNumList = numList.sort((a, b) => {
+  return a - b; //lowest to highest
 });
 
 ///////////////

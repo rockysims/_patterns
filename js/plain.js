@@ -11,6 +11,10 @@ let x = 0;
 x++;
 x += 100;
 
+const s1 = 'single quote (\') string with ' + n + ' in it';
+const s2 = "double quote (\") string with " + n + " in it";
+const s3 = `backtick (\`) string with ${n} in it using \${n}`;
+
 ///////////////
 
 if (n >= 0) console.log(n + ' is greater than or equal to 0');
@@ -20,6 +24,10 @@ if (a[0] === n) {
 } else {
     console.log(a[0] + ' doesn\'t exactly equal ' + n);
 }
+
+const s4 = (a[1] === 2)
+    ? a[1] + ' exactly equals 2'
+    : a[1] + ' does not exactly equal 2';
 
 ///////////////
 

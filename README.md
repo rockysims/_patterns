@@ -1,4 +1,5 @@
-Common coding patterns for novice programmers. Focused on html, css, and javascript.
+Common coding patterns for novice programmers.
+Focused on html, css, and javascript.
 
 ### Guiding Principles
 - Show don't tell. Exclude explanations written in english.

@@ -42,8 +42,8 @@ window.addEventListener('load', () => {
     const elem = document.querySelector('#moveMe');
     elem.style.position = 'absolute';
     document.addEventListener('mousemove', event => {
-        elem.style.top = event.clientY + 20 + 'px';
         elem.style.left = event.clientX + 20 + 'px';
+        elem.style.top = event.clientY + 20 + 'px';
     });
 
 });

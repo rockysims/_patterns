@@ -1,6 +1,6 @@
 Common coding patterns for novice programmers. Focused on html, css, and javascript.
 
-# Guiding Principles
+### Guiding Principles
 - Show don't tell. Exclude explanations written in english.
 - Design for copy & paste. Minimal, self explanatory examples.
 - Prioritize density. Exclude less common variations and avoid repetition.

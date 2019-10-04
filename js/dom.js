@@ -38,17 +38,12 @@ window.addEventListener('load', () => {
     document.querySelector('#changeMe').innerHTML = '<i><b>has</b> changed</i>';
 
     ///////////////
-    
-    const elem = document.querySelector('#moveMe');
-    const origRect = elem.getBoundingClientRect();
-    elem.style.position = 'absolute';
-    let count = 0;
-    setInterval(() => {
-        count++;
-        elem.style.top = origRect.top - count + 'px';
-        elem.style.left = origRect.left - count + 'px';
-    }, 100);
 
-    ///////////////
+    const elem = document.querySelector('#moveMe');
+    elem.style.position = 'absolute';
+    document.addEventListener('mousemove', event => {
+        elem.style.top = event.clientY + 20 + 'px';
+        elem.style.left = event.clientX + 20 + 'px';
+    });
 
 });

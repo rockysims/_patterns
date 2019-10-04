@@ -1,3 +1,4 @@
+### Description
 Common coding patterns for novice programmers.
 Focused on html, css, and javascript.
 

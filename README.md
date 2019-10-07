@@ -7,3 +7,8 @@ Focused on html, css, and javascript.
 - Design for copy & paste. Minimal, self explanatory examples.
 - Prioritize density. Exclude less common variations and avoid repetition.
 - Assume the reader has seen and understood it all before but has forgotten.
+
+### Wish List
+- common ide text manipulation/navigation tactics with exercises
+- exercises using only patterns demonstrated here
+- free web hosting guide

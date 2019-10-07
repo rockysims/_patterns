@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
     ///////////////
 
-    document.body.addEventListener('keydown', event => {
+    document.querySelector('body').addEventListener('keydown', event => {
         console.log(event.key + ' key down');
     });
 

@@ -1,5 +1,5 @@
 ### Description
-Common coding patterns for novice programmers to copy.
+Common coding patterns for new programmers to copy.
 Focused on html, css, and javascript.
 
 ### Guiding Principles

@@ -140,3 +140,7 @@ const goPromise = new Promise(resolve => resolve())
     .then(() => alert('Go'));
 
 goPromise.then(() => console.log('Going'));
+
+///////////////
+
+debugger;

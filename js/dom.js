@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const allButtons = document.querySelectorAll('button');
     const firstButton = document.querySelector('button');
     const firstWithId = document.querySelector('#someId');

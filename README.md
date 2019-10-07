@@ -10,5 +10,5 @@ Focused on html, css, and javascript.
 
 ### Wish List
 - common ide text manipulation/navigation tactics with exercises
-- exercises using only patterns demonstrated here
+- coding exercises using only patterns demonstrated here
 - free web hosting guide

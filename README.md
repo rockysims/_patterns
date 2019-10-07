@@ -12,3 +12,6 @@ Focused on html, css, and javascript.
 - common ide text manipulation/navigation tactics with exercises
 - coding exercises using only patterns demonstrated here
 - walkthrough for deploying to free web hosting
+- vscode setup guide
+-- save on lose focus
+-- change navigate forward/backward shortcut to opt + cmd + rigth/left arrow (and delete old meaning)

@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     const firstButton = document.querySelector('button');
     const firstWithId = document.querySelector('#someId');
     const firstWithClass = document.querySelector('.someClass');
-    const firstWithAttr = document.querySelector('[data-someAttr=someString]');
+    const firstWithAttr = document.querySelector('[data-some-attr=someString]');
 
     ///////////////
 
@@ -45,5 +45,11 @@ window.addEventListener('load', () => {
         elem.style.left = event.clientX + 20 + 'px';
         elem.style.top = event.clientY + 20 + 'px';
     });
+
+    ///////////////
+
+    const elemWithAttr = document.querySelector('[data-some-attr=someString]');
+    const attrValue = elemWithAttr.getAttribute('data-some-attr');
+    elemWithAttr.setAttribute('data-some-attr', 'someNewString');
 
 });

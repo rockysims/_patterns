@@ -125,9 +125,9 @@ const answerPromise = new Promise((resolve, reject) => {
 });
 
 answerPromise.then(answer => {
-    console.log('answerPromised resolved: ' + answer);
+    console.log('answerPromise resolved: ' + answer);
 }, rejectedAnswer => {
-    console.log('answerPromised rejected: ' + rejectedAnswer);
+    console.log('answerPromise rejected: ' + rejectedAnswer);
 }).finally(() => {
     console.log('after answerPromise resolve/reject finished');
 });

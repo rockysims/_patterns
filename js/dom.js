@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ///////////////
 
-    document.querySelector('#changeMe').innerHTML = '<i><b>has</b> changed</i>';
+    document.querySelector('#changeMe').innerHTML = '<em><strong>has</strong> changed</em>';
 
     ///////////////
 

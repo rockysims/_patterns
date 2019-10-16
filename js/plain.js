@@ -8,7 +8,7 @@ function valueTypesExample() {
     const v3 = true; //a boolean (either true or false)
     const v4 = 1; //a number
     const v5 = 'string'; //a string of characters
-    const v6 = [1, 2]; //an array (a list of values)
+    const v6 = [1, 2]; //an array (list of values)
     const v7 = {key1: 'value1', key2: 'value2'}; //an object (collection of key value pairs where each key is a string)
     const v8 = function() { //a function (a block of code with or without a name)
         console.log('run v8()');
@@ -65,8 +65,6 @@ function booleanOperatorsExample() {
     //using multiple operators and variables instead of literals
     const b8 = (b1 && b3) || b2; //(b1 AND b3) OR b2 is true
 }
-
-// -- Control Flow -- //
 
 /**
  * Two normal if statements and two inline if statements.

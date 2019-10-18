@@ -2,26 +2,6 @@
 
 
 
-/**
- * Three ways of looping through every item in an array.
- */
-function forLoopsExample() {
-    const list = ['A', 'B', 'C'];
-
-    for (let i = 0; i < list.length; i++) {
-        console.log('item: ' + list[i]);
-    }
-    
-    //also works if list is an object
-    for (let i in list) {
-        console.log('item: ' + list[i]);
-    }
-    
-    //also works if list is an object
-    for (let item of list) {
-        console.log('item: ' + item);
-    }
-}
 
 /**
  * Some of the most common array comprehensions.

@@ -1,0 +1,34 @@
+Remember to open the console.
+
+<script>
+	//-------------------------------------------------
+	// Use for to loop over all items in an array.
+	//-------------------------------------------------
+
+	let list = ['A', 'B', 'C'];
+
+	//for each item in list, console.log() it
+    for (let index = 0; index < list.length; index++) {
+        console.log(list[index]);
+    }
+
+	//for each item in list, console.log() it
+    for (let index in list) {
+        console.log(list[index]);
+    }
+
+	//for each item in list, console.log() it
+    for (let item of list) {
+        console.log(item);
+	}
+
+	let object = {
+		key1: 10,
+		key2: 20,
+	};
+
+	//for each key in object, console.log() it
+    for (let k in object) {
+        console.log(object[k]);
+    }
+</script>

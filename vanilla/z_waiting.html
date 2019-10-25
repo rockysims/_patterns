@@ -1,0 +1,18 @@
+Remember to open the console.
+
+<script>
+	//---------------------------------------------------------
+	// Using setTimeout() and setInterval() to delay execution.
+	//---------------------------------------------------------
+
+	//wait 2 seconds then console.log()
+	setTimeout(() => {
+		console.log('finished waiting for 2 seconds');
+	}, 2000);
+
+	//every 2 seconds, console.log()
+	const intervalId = setInterval(() => {
+		console.log('another 2 seconds have passed');
+	}, 2000);
+	//clearInterval(intervalId); //stop running console.log() every 2 seconds
+</script>

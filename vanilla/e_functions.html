@@ -1,0 +1,40 @@
+Remember to open the console.
+
+<script>
+	//--------------------------------
+	// Defining and running functions.
+	//--------------------------------
+
+	//define an anonymous function (and run it immediately)
+	(function() {
+		console.log('run anonymous function');
+	})();
+
+	//define an anonymous function (and store it in f1)
+	const f1 = function() {
+		console.log('run anonymous function stored in f1');
+	}
+	f1(); //run f1()
+
+	//define a function named f2 that accepts two parameters and returns their sum
+	function f2(p1, p2) {
+		console.log(`run f2() with parameters: ${p1}, ${p2}`);
+		return p1 + p2;
+	}
+	const r2 = f2(10, 20); //run f2() passing in 10 and 20 and store the returned value in r2
+
+	//define an arrow function that accepts two parameters and returns their sum (and store it in f3)
+	const f3 = (p1, p2) => {
+		console.log(`run f3() with parameters: ${p1}, ${p2}`);
+		return p1 + p2;
+	};
+	const r3 = f3(10, 20); //run f3() passing in 10 and 20 and store the returned value in r3
+
+	//define an arrow function without curly brackets that accepts two parameters and returns their sum (and store it in f4)
+	const f4 = (p1, p2) => p1 + p2;
+	const r4 = f4(10, 20); //run f4() passing in 10 and 20 and store the returned value in r4
+
+	//--------------------------------
+
+	console.log(r4);
+</script>

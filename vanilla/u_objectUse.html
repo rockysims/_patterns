@@ -1,0 +1,25 @@
+Remember to open the console.
+
+<script>
+	//-----------------
+	// Using an object.
+	//-----------------
+
+	let objectVar = {key1: 10, key2: 20, key3: 30};	//create object
+	console.log(objectVar['key1']);					//read value associated with key1
+	objectVar['key1'] = 100;						//update value associated with key1 to 100
+	delete objectVar['key1'];						//delete key1 and associated value
+
+	console.log(Object.keys(objectVar));			//get an array containing all the object's keys
+	console.log(Object.values(objectVar));			//get an array containing all the object's values
+	objectVar['key4'] = 40;							//add the value 40 associated with key4
+
+	//for each key in objectVar, console.log() the key and associated value
+	for (let key in objectVar) {
+		console.log(key + ': ' + objectVar[key]);
+	}
+
+	//-----------------
+
+	console.log(objectVar);
+</script>

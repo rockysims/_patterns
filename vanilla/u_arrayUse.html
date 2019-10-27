@@ -1,0 +1,26 @@
+Remember to open the console.
+
+<script>
+	//----------------
+	// Using an array.
+	//----------------
+
+	let arrayVar = [10, 20, 30];	//create array
+	console.log(arrayVar[0]);		//read element at index 0
+	arrayVar[0] = 100;				//update element at index 0 to 100
+	arrayVar.splice(0, 1);			//delete 1 element(s) starting from index 0
+
+	console.log(arrayVar.length); 			//get the number of elements
+	arrayVar.push(40); 						//add 40 after the last element
+	let removedElement = arrayVar.pop(); 	//remove the last element
+	let indexOf30 = arrayVar.indexOf(30); 	//find the index of the first element exactly equal to 30 (-1 if not found)
+
+	//for each element in arrayVar, console.log() it
+	for (let element of arrayVar) {
+		console.log(element);
+	}
+
+	//----------------
+
+	console.log(arrayVar);
+</script>

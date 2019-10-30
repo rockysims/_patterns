@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>img</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+		<br/>
+		Click the image.<br/>
+		<img src="../images/locked.png"/>
+
+		<script>
+			let imgElem = document.querySelector('img');
+
+			imgElem.addEventListener('click', () => {
+				imgElem.setAttribute('src', '../images/unlocked.png');
+			});
+		</script>
+	</body>
+</html>

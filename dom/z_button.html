@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>button</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+		<br/>
+		Click the button.<br/>
+		<button>Go</button>
+
+		<script>
+			let buttonElem = document.querySelector('button');
+
+			buttonElem.addEventListener('click', () => {
+				console.log('button clicked');
+			});
+		</script>
+	</body>
+</html>

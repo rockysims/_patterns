@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>DOMContentLoaded</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+
+		<span>
+			This exists before either script runs.<br/>
+		</span>
+
+		<script>
+			//DOM (*document* object model) is the browser's mental model of all the html elements that make up the web page
+
+			//wait for all html elements to load then console.log() an array of all spans
+			document.addEventListener('DOMContentLoaded', () => {
+				console.log('inside');
+				console.log(document.querySelectorAll('span'));
+			});
+		</script>
+	
+		<script>
+			console.log('outside');
+			console.log(document.querySelectorAll('span')); //console.log() an array of all spans
+		</script>
+
+		<span>
+			This does <em>not</em> exist before 'outside' script runs.<br/>
+		</span>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>querySelector</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+		<br/>
+		<div>one</div>
+		<div id="myId">two</div>
+		<div class="myClass">three</div>
+		<div data-some-attr="someString">four</div>
+		<div class="myClass">five</div>
+		<div class="myClass">six</div>
+
+		<script>
+			let allDivs = document.querySelectorAll('div'); //get all div elements (array of elements)
+
+			let firstDiv = document.querySelector('div'); //get first div element
+			let secondDiv = document.querySelector('#myId'); //get first element with id "myId"
+			let thirdDiv = document.querySelector('.myClass'); //get first element with class "myClass"
+			let forthDiv = document.querySelector('[data-some-attr=someString]'); //get first element with data-some-attr="someString"
+			
+			//-----------------------------
+
+			//change "one" to "1st" and "two" to "2nd"
+			firstDiv.innerHTML = '1st';
+			allDivs[1].innerHTML = '2nd';
+
+			//for each div, append "!"
+			for (let div of allDivs) {
+				div.innerHTML += '!';
+			}
+
+			//get array of all elements with class "myClass" and console.log() it
+			let myClassDivs = document.querySelectorAll('.myClass');
+			console.log(myClassDivs);
+		</script>
+	</body>
+</html>

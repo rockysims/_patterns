@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>select</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+		<br/>
+		Select an option.<br/>
+		<select>
+			<option>option1</option>
+			<option>option2</option>
+			<option>option3</option>
+		</select>
+
+		<script>
+			let selectElem = document.querySelector('select');
+
+			selectElem.addEventListener('change', () => {
+				console.log('selected option changed: ' + selectElem.value);
+			});
+		</script>
+	</body>
+</html>

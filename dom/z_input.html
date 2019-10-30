@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>input</title>
+	</head>
+	<body>
+		Remember to open the console.<br/>
+		<br/>
+		Type in the input field.<br/>
+		<input/>
+
+		<script>
+			let inputElem = document.querySelector('input');
+
+			inputElem.addEventListener('input', () => {
+				console.log('text has changed: ' + inputElem.value);
+			});
+		</script>
+	</body>
+</html>

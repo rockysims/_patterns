@@ -6,10 +6,9 @@ Focused on html, css, and javascript.
 - Show don't tell. Avoid explanations written in english.
 - Design for copy & paste. Minimal, self explanatory examples.
 - Prioritize density. Exclude less common variations and avoid repetition.
-- Assume the reader has seen and understood it all before but has forgotten.
+- Assume the reader has seen it all before but needs a reminder.
 
 ### Wish List
-- wrap javascript examples in functions with /** */ explaining it?
 - common ide text manipulation/navigation tactics with exercises
 - coding exercises using only patterns demonstrated here
 - walkthrough for deploying to free web hosting
@@ -21,3 +20,4 @@ Focused on html, css, and javascript.
     - create new project
     - create new file
     - create index.html and add main.js
+- add vanilla/javadocs.html

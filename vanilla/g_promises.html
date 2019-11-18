@@ -5,39 +5,38 @@ Remember to open the console.
 	// Using promises to wait for something before executing.
 	//-------------------------------------------------------
 
-	//create promise that waits for user to answer
-	let answerPromise = new Promise((resolve, reject) => {
-		let answer = prompt('Enter 3 letter word.');
-		if (answer.length === 3) {
-			resolve(answer);
+	//create promise that waits for user to enter a string 3 characters long
+	let wordPromise = new Promise((resolve, reject) => {
+		let word = prompt('Enter 3 letter word.');
+		if (word === null) word = 'cancel';
+
+		if (word.length === 3) {
+			resolve(word);
 		} else {
-			reject(answer);
+			reject(word);
 		}
 	});
 
 	//wait for promise to be resolved/rejected then console.log() (and finally console.log() after that)
-	answerPromise.then(answer => {
-		console.log('answerPromise resolved: ' + answer);
-	}, rejectedAnswer => {
-		console.log('answerPromise rejected: ' + rejectedAnswer);
-	}).finally(() => {
-		console.log('after answerPromise resolve/reject finished');
+	wordPromise.then(
+		word => console.log('wordPromise resolved: ' + word),
+	 	rejectedWord => console.log('wordPromise rejected: ' + rejectedWord)
+	).finally(
+		() => console.log('wordPromise resolve/reject handler finished')
+	);
+
+	//if word is "cat", pretend it was "meow"
+	// and then console.log() it
+	wordPromise.then(word => {
+		return (word === 'cat')
+			? 'meow'
+			: word;
+	}).then(word => {
+		console.log(word);
 	});
 
 	//-------------------------------------------------------
 
-	//create a promise and resolve it immediately and set goPromise to a promise that will be resolved when all 3 alerts have been dismissed
-	//then alert "Ready" and wait for user to dismiss
-	//then alert "Set" and wait for user to dismiss
-	//then alert "Go" and wait for user to dismiss
-	let goPromise = new Promise(resolve => resolve())
-		.then(() => alert('Ready'))
-		.then(() => alert('Set'))
-		.then(() => alert('Go'));
-
-	//wait for all 3 thens to run and then console.log()
-	goPromise.then(() => console.log('Going'));
-
-	//console.log() without waiting for goPromise
+	//console.log() without waiting for any promises
 	console.log('Done');
 </script>

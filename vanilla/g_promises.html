@@ -7,10 +7,12 @@ Remember to open the console.
 
 	//create promise that waits for user to answer
 	let answerPromise = new Promise((resolve, reject) => {
-		let answer = prompt('Resolve promise? Enter "yes" or "no".');
-		if (answer === 'yes') resolve('The user said yes.');
-		else if (answer === 'no') resolve('The user said no.');
-		else reject('The user provided an invalid answer.');
+		let answer = prompt('Enter 3 letter word.');
+		if (answer.length === 3) {
+			resolve(answer);
+		} else {
+			reject(answer);
+		}
 	});
 
 	//wait for promise to be resolved/rejected then console.log() (and finally console.log() after that)

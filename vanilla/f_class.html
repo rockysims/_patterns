@@ -25,13 +25,14 @@ Remember to open the console.
 	}
 
 	//create instant of MyClass and run each method
-	let myClassA = new MyClass('Alpha');
-	myClassA.method1(10, 20);
-	myClassA.method2();
+	let myClassInstanceA = new MyClass('Alpha');
+	myClassInstanceA.method1(10, 20);
+	myClassInstanceA.method2();
 
 	//create another instant of MyClass and run method2()
-	let myClassB = new MyClass('Beta');
-	myClassB.method2(); //run method2 on myClassB instance of MyClass
+	let myClassInstanceB = new MyClass('Beta');
+	myClassInstanceB.method2(); //run method2 on myClassInstanceB
 
-	myClassA.method2(); //run method2 on myClassA to demonstrate that each instance has it's own set of local variables (name and method1RunCount in this case)
+	//demonstrate that each instance has it's own set of local variables (name and method1RunCount in this case)
+	myClassInstanceA.method2(); //run method2 on myClassInstanceA
 </script>

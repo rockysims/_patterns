@@ -3,7 +3,7 @@ Common coding patterns for new programmers to copy.
 Focused on html, css, and javascript.  
 
 ### Where to start
-1. Download the [master](https://github.com/rockysims/_patterns/archive/master.zip) branch and unzip it.
+1. [Download](https://github.com/rockysims/_patterns/archive/master.zip) the master branch and unzip it.
 2. Open vanilla/_start.html in a browser.
 3. Compare the html file with the browser console.
 4. Play with the code until you understand what it's doing.

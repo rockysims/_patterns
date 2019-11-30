@@ -17,12 +17,12 @@
 		<?php
 		function renderIndex($curPath) {
 			$file = basename($curPath);
-			$indent = str_repeat("-", substr_count($curPath, "/"));
+			$indent = str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;", substr_count($curPath, "/"));
 
 			if (is_dir($curPath)) {
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
-					echo "$indent $file<br/>";
+					echo "$indent <strong>$file/</strong><br/>";
 					renderIndex($curPath . '/' . $child);
 				}
 			} else {

@@ -15,50 +15,14 @@
         <br/>
 		<br/>
 		<?php
-
-
-
 		$dirPath = 'learningMaterial/code/vanilla';
-
-		$files = array();
 		foreach (scandir($dirPath) as $file) {
 			if ($file === '.' || $file === '..') continue;
-			$files[] = $file;
-		}
-
-		var_dump($files);
-
-
-
-
-
-		// $path = "learningMaterial/code/vanilla";
-
-		// if ($handle = opendir($path)) {
-		// 	while (false !== ($file = readdir($handle))) {
-		// 		if ('.' === $file) continue;
-		// 		if ('..' === $file) continue;
-		
-		// 		//render link
-		// 		echo $file->basename();
-		// 	}
-		// 	closedir($handle);
-		// }
-
-
-
-		// $dir = new DirectoryIterator('learningMaterial/code/vanilla');
-		// foreach ($dir as $fileinfo) {
-		// 	if (!$fileinfo->isDot()) {
-		// 		var_dump($fileinfo->getFilename());
-		// 	}
-		// }
+			$path = $dirPath . '/' . $file;
 		?>
-        <a href="learningMaterial/code/vanilla/_start.html">
-            learningMaterial/code/vanilla/_start.html
-        </a>
-        <a href="learningMaterial/code/vanilla/zz_debugger.html">
-            learningMaterial/code/vanilla/zz_debugger.html
-        </a>
+			<a href="<?php echo $path ?>">
+				<php echo $file; ?>
+			</a><br/>
+		<?php } ?>
     </body>
 </html>

@@ -24,13 +24,11 @@
 					$allChildPaths->array_push(getDirPaths($childPath));
 				}
 			} else {
-				$allChildPaths[] = $childPath;
+				$allChildPaths[] = $curPath;
 			}
 
 			return $allChildPaths;
 		}
-
-		var_dump(getDirPaths('learningMaterial'));
 
 		foreach (getDirPaths('learningMaterial') as $path) {
 			$file = basename($path);

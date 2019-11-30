@@ -21,12 +21,12 @@
 			$indent = str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;", substr_count($curPath, "/"));
 			$curDir = basename($curPath);
 
+			echo "$indent <strong>$curDir/</strong><br/>";
 			foreach (scandir($curPath) as $child) {
 				if ($child === '.' || $child === '..') continue;
 
 				$childPath = $curPath . '/' . $child;
 				if (is_dir($childPath)) {
-					echo "$indent <strong>$curDir/</strong><br/>";
 					renderIndex($childPath);
 				} else {
 					echo "$indent <a href=\"$childPath\">$child</a><br/>";

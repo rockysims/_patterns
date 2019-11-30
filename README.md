@@ -18,6 +18,10 @@ Focused on html, css, and javascript.
 
 ---
 
+Feel free to ignore everything below.
+
+---
+
 ### Wish List
 - common ide text manipulation/navigation tactics with exercises
 - coding exercises needing only patterns demonstrated here

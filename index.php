@@ -1,1 +1,1 @@
-<?php include_once("vanilla/_start.html") ?>
+<?php include_once("code/index.html") ?>

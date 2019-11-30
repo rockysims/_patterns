@@ -31,8 +31,11 @@
 		}
 
 		foreach (getDirPaths('learningMaterial') as $path) {
+			$dir = dirname($path);
 			$file = basename($path);
-			echo "<a href=\"$path\">$file</a><br/>";
+			$depth = substr_count($path, "/");
+			$indent = str_repeat("&nbsp;&nbsp;", $depth);
+			echo "<a href=\"$path\">$indent $file</a><br/>";
 		}
 		?>
     </body>

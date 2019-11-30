@@ -16,16 +16,14 @@
 		<br/>
 		<?php
 		function renderIndex($curPath) {
-			$dir = dirname($curPath);
 			$file = basename($curPath);
-			$depth = substr_count($curPath, "/");
-			$indent = str_repeat("&nbsp;&nbsp;", $depth);
+			$indent = str_repeat("&nbsp;&nbsp;", substr_count($curPath, "/"));
 
 			if (is_dir($curPath)) {
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
 					echo "$indent $file<br/>";
-					getDirPaths($curPath . '/' . $child);
+					renderIndex($curPath . '/' . $child);
 				}
 			} else {
 				echo "$indent <a href=\"$curPath\">$file</a><br/>";

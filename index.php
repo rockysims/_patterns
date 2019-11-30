@@ -21,7 +21,7 @@
 			if (is_dir($curPath)) {
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
-					array_push($allChildPaths, getDirPaths($curPath . '/' . $child));
+					array_push($allChildPaths, ...getDirPaths($curPath . '/' . $child));
 				}
 			} else {
 				$allChildPaths[] = $curPath;

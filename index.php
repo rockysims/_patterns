@@ -21,7 +21,7 @@
 			if (is_dir($curPath)) {
 				foreach (scandir($curPath) as $childPath) {
 					if ($childPath === '.' || $childPath === '..') continue;
-					$allChildPaths[] = getDirPaths($childPath);
+					$allChildPaths->array_push(getDirPaths($childPath));
 				}
 			} else {
 				$allChildPaths[] = $childPath;
@@ -32,7 +32,7 @@
 
 		foreach (getDirPaths('learningMaterial') as $path) {
 			$file = basename($path);
-			echo "<a href=\"".$path."\">".$file."</a><br/>";
+			echo "<a href=\"$path\">$file</a><br/>";
 		}
 		?>
     </body>

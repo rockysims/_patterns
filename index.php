@@ -16,12 +16,13 @@
 		<br/>
 		<?php
 		$dirPath = 'learningMaterial/code/vanilla';
+		echo $dirPath . ':<br/>';
 		foreach (scandir($dirPath) as $file) {
 			if ($file === '.' || $file === '..') continue;
 			$path = $dirPath . '/' . $file;
 		?>
 			<a href="<?php echo $path ?>">
-				<php echo $file; ?>
+				<php echo $file ?>
 			</a><br/>
 		<?php } ?>
     </body>

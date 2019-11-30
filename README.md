@@ -4,7 +4,7 @@ Focused on html, css, and javascript.
 
 ### Where to start
 1. **[Download](https://github.com/rockysims/_patterns/archive/master.zip)** the master branch and unzip it.
-2. Open code/vanilla/_start.html in a browser.
+2. Open learningMaterial/code/vanilla/_start.html in a browser.
 3. Compare the html file with the browser console.
 4. Play with the code until you understand what it's doing.
 5. Go on to the next html file (and repeat from step 3).

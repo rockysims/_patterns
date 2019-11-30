@@ -16,19 +16,14 @@
 		<br/>
 		<?php
 		function getDirPaths($curPath) {
-			echo "curPath: $curPath<br/>";
 			$allChildPaths = [];
 
 			if (is_dir($curPath)) {
-				var_dump(scandir($curPath));
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
-					$childPath = $curPath . '/' . $child;
-					$childPaths = getDirPaths($childPath);
-					$allChildPaths->array_push($childPaths);
+					array_push($allChildPaths, getDirPaths($curPath . '/' . $child));
 				}
 			} else {
-				echo "found file $curPath<br/>";
 				$allChildPaths[] = $curPath;
 			}
 

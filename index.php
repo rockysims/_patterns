@@ -30,6 +30,8 @@
 			return $allChildPaths;
 		}
 
+		var_dump(getDirPaths('learningMaterial'));
+
 		foreach (getDirPaths('learningMaterial') as $path) {
 			$file = basename($path);
 			echo "<a href=\"$path\">$file</a><br/>";

@@ -15,15 +15,25 @@
         <br/>
 		<br/>
 		<?php
-		$dirPath = 'learningMaterial/code/vanilla';
-		echo $dirPath . ':<br/>';
-		foreach (scandir($dirPath) as $file) {
-			if ($file === '.' || $file === '..') continue;
-			$path = $dirPath . '/' . $file;
+		function getDirPaths($curPath) {
+			$allChildPaths = [];
+
+			if (is_dir($curPath)) {
+				foreach (scandir($curPath) as $childPath) {
+					if ($childPath === '.' || $childPath === '..') continue;
+					$allChildPaths[] = getDirPaths($childPath);
+				}
+			} else {
+				$allChildPaths[] = $childPath;
+			}
+
+			return $allChildPaths;
+		}
+
+		foreach (getDirPaths('learningMaterial') as $path) {
+			$file = basename($path);
+			echo "<a href=\"".$path."\">".$file."</a><br/>";
+		}
 		?>
-			<a href="<?php echo $path ?>">
-				<?php echo $file ?>
-			</a><br/>
-		<?php } ?>
     </body>
 </html>

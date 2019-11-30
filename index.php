@@ -20,11 +20,13 @@
 			$allChildPaths = [];
 
 			if (is_dir($curPath)) {
+				var_dump(scandir($curPath));
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
 					$allChildPaths->array_push(getDirPaths($curPath . '/'. $child));
 				}
 			} else {
+				echo "found file $curPath<br/>";
 				$allChildPaths[] = $curPath;
 			}
 

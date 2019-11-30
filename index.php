@@ -18,10 +18,11 @@
 		function renderIndex($curPath) {
 			if (!is_dir($curPath)) throw "Error: '$curPath' is not a directory.";
 			
-			$indent = str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;", substr_count($curPath, "/"));
+			$indent = "&nbsp;&nbsp;&nbsp;&nbsp;";
+			$indents = str_repeat($indent, substr_count($curPath, "/"));
 			$curDir = basename($curPath);
 
-			echo "$indent <strong>$curDir/</strong><br/>";
+			echo "$indents <strong>$curDir/</strong><br/>";
 			foreach (scandir($curPath) as $child) {
 				if ($child === '.' || $child === '..') continue;
 
@@ -29,7 +30,7 @@
 				if (is_dir($childPath)) {
 					renderIndex($childPath);
 				} else {
-					echo "$indent <a href=\"$childPath\">$child</a><br/>";
+					echo "$indents $indent <a href=\"$childPath\">$child</a><br/>";
 				}
 			}
 		}

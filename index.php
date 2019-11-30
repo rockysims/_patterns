@@ -16,6 +16,7 @@
 		<br/>
 		<?php
 		function getDirPaths($curPath) {
+			echo "curPath: $curPath<br/>";
 			$allChildPaths = [];
 
 			if (is_dir($curPath)) {

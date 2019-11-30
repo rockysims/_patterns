@@ -17,7 +17,7 @@
 		<?php
 		function renderIndex($curPath) {
 			$file = basename($curPath);
-			$indent = str_repeat("&nbsp;&nbsp;", substr_count($curPath, "/"));
+			$indent = str_repeat("-", substr_count($curPath, "/"));
 
 			if (is_dir($curPath)) {
 				foreach (scandir($curPath) as $child) {
@@ -31,39 +31,6 @@
 		}
 
 		renderIndex('learningMaterial');
-
-
-
-
-
-
-
-
-
-
-
-		// function getDirPaths($curPath) {
-		// 	$allChildPaths = [];
-
-		// 	if (is_dir($curPath)) {
-		// 		foreach (scandir($curPath) as $child) {
-		// 			if ($child === '.' || $child === '..') continue;
-		// 			array_push($allChildPaths, ...getDirPaths($curPath . '/' . $child));
-		// 		}
-		// 	} else {
-		// 		$allChildPaths[] = $curPath;
-		// 	}
-
-		// 	return $allChildPaths;
-		// }
-
-		// foreach (getDirPaths('learningMaterial') as $path) {
-		// 	$dir = dirname($path);
-		// 	$file = basename($path);
-		// 	$depth = substr_count($path, "/");
-		// 	$indent = str_repeat("&nbsp;&nbsp;", $depth);
-		// 	echo "$indent<a href=\"$path\">$file</a><br/>";
-		// }
 		?>
     </body>
 </html>

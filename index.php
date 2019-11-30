@@ -22,7 +22,7 @@
 			$path = $dirPath . '/' . $file;
 		?>
 			<a href="<?php echo $path ?>">
-				<php echo $file ?>
+				<?php echo $file ?>
 			</a><br/>
 		<?php } ?>
     </body>

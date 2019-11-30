@@ -23,7 +23,9 @@
 				var_dump(scandir($curPath));
 				foreach (scandir($curPath) as $child) {
 					if ($child === '.' || $child === '..') continue;
-					$allChildPaths->array_push(getDirPaths($curPath . '/'. $child));
+					$childPath = $curPath . '/' . $child;
+					$childPaths = getDirPaths($childPath);
+					$allChildPaths->array_push($childPaths);
 				}
 			} else {
 				echo "found file $curPath<br/>";

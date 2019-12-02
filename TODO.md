@@ -1,6 +1,9 @@
 ### In Progress
 - heroku hosting guide
 
+### TODO
+- update js concept files to use both let and const (instead of just let)
+
 ### Wish List
 - common ide text manipulation/navigation tactics with exercises
 - coding exercises needing only patterns demonstrated here
@@ -32,4 +35,6 @@
             - setup, git, npm, googling, hosting, etc.  
         - html concepts
             - elements, built in attributes, css selectors & declarations, etc.  
-- Gamified introduction to mentally running code: http://turing-game.pl/
+- http://turing-game.pl/ -- Gamified introduction to thinking like a programmer.
+- codewars.com -- Coding challenges (unit tested). Shows you other people's solutions once you solve it.
+
